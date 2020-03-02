@@ -1,6 +1,8 @@
 const testResolvers = {
   Query: {
-    testQuery: () => 'Result of Test Query',
+    testQuery: async () => {
+      return 'Result of Test Query';
+    },
   },
 };
 

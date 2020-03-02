@@ -15,11 +15,6 @@ app.get('/', (req, res) => {
   res.json('index');
 });
 
-app.post('/', (req, res) => {
-  console.log(req.headers);
-  res.json('index');
-});
-
 const server = new ApolloServer({ typeDefs, resolvers });
 server.applyMiddleware({
   app: app,
