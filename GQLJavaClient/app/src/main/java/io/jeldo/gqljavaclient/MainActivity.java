@@ -28,8 +28,10 @@ public class MainActivity extends AppCompatActivity {
     private EditText etUserAge;
     private EditText etUserId;
 
-    // private static final String BASE_URL = "http://192.168.0.24:8100/graphql";
-    private static final String BASE_URL = "http://10.0.2.2:8100/graphql";
+    /* for real device */
+     private static final String BASE_URL = "http://192.168.0.24:8100/graphql";
+     /* for emulator */
+//    private static final String BASE_URL = "http://10.0.2.2:8100/graphql";
 
     OkHttpClient okHttpClient = new OkHttpClient.Builder()
 //             .addInterceptor(new Interceptor() {
