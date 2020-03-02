@@ -29,22 +29,22 @@ public class MainActivity extends AppCompatActivity {
     private EditText etUserId;
 
     /* for real device */
-     private static final String BASE_URL = "http://192.168.0.24:8100/graphql";
-     /* for emulator */
-//    private static final String BASE_URL = "http://10.0.2.2:8100/graphql";
+    private static final String BASE_URL = "http://192.168.0.24:8100/graphql";
+    /* for emulator */
+    // private static final String BASE_URL = "http://10.0.2.2:8100/graphql";
 
     OkHttpClient okHttpClient = new OkHttpClient.Builder()
-//             .addInterceptor(new Interceptor() {
-//                 @Override
-//                 public okhttp3.Response intercept(Chain chain) throws IOException {
-//                     Request original = chain.request();
-//                     Request request = original.newBuilder()
-//                             .header("Authorization", "Bearer 5ea055c259d307c46b9f7857101541a66aee7743")
-//                             .method(original.method(), original.body())
-//                             .build();
-//                     return chain.proceed(request);
-//                 }
-//             })
+            // .addInterceptor(new Interceptor() {
+            // @Override
+            // public okhttp3.Response intercept(Chain chain) throws IOException {
+            // Request original = chain.request();
+            // Request request = original.newBuilder()
+            // .header("Authorization", "Bearer 5ea055c259d307c46b9f7857101541a66aee7743")
+            // .method(original.method(), original.body())
+            // .build();
+            // return chain.proceed(request);
+            // }
+            // })
             .build();
 
     ApolloClient apolloClient = ApolloClient.builder().serverUrl(BASE_URL).okHttpClient(okHttpClient).build();
