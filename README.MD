@@ -1,4 +1,4 @@
-## Tutorial for NodeJS, Android(Java, Kotlin), GraphQL and MongoDB
+## Example code for NodeJS, Android(Java, Kotlin), GraphQL and MongoDB
 
 ### How to start server
 
